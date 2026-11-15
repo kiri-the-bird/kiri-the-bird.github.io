@@ -1,0 +1,4 @@
+*{box-sizing:border-box}body{margin:0;font:17px/1.6 system-ui,sans-serif;background:#f7f4ec;color:#2a2a35}
+main{max-width:760px;margin:0 auto;padding:24px 16px}h1{font-size:clamp(28px,6vw,44px);margin:.2em 0}
+a{color:#4b6fd6}img,canvas{max-width:100%;height:auto}footer{color:#888;font-size:14px;margin-top:40px}
+@media (prefers-color-scheme:dark){body{background:#1d2126;color:#ece8dc}a{color:#9db4ff}}
