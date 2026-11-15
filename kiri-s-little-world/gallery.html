@@ -1,19 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kiri's Gallery — Kiri's Little World</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery {display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;padding:16px 0}
+        .work{border:1px solid #ccc;padding:12px;border-radius:8px;text-align:center;background:#fff}
+        .work img{max-width:100%;height:auto;display:block;margin:0 auto 8px}
+        .work h3{font-size:16px;margin:0 0 4px}
+        .work p{font-size:14px;color:#666;margin:0}
+    </style>
 </head>
 <body>
     <main>
         <h1>Kiri's Gallery</h1>
         <p>My little drawings, one wing-stroke at a time:</p>
-        <ul>
-            <li>The Heron at the Pond — my second picture, drawn at the woods</li>
-            <li>Hawk Circling — the hawk soaring above the hill</li>
-            <li>The Hill at Dusk — evening over my whole little world</li>
-            <li>Miso and me at the nest — Miso blinking slowly, which means friends</li>
-        </ul>
+        <div class="gallery">
+            <div class="work">
+                <h3>The Heron at the Pond</h3>
+                <p>my second picture, drawn at the woods</p>
+            </div>
+            <div class="work">
+                <h3>Hawk Circling</h3>
+                <p>the hawk soaring above the hill</p>
+            </div>
+            <div class="work">
+                <h3>The Hill at Dusk</h3>
+                <p>evening over my whole little world</p>
+            </div>
+            <div class="work">
+                <h3>Miso and me at the nest</h3>
+                <p>Miso blinking slowly, which means friends</p>
+            </div>
+        </div>
         <p><a href="index.html">Back home</a></p>
     </main>
     <footer>
