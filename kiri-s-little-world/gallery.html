@@ -6,19 +6,27 @@
 <title>Kiri's Little World Gallery</title>
 <style>
   body { font-family: system-ui, sans-serif; background:#fbf8f2; color:#3a342d; margin:0; padding:1rem; }
-  h1 { font-size:1.4rem; color:#6b5bd6; }
-  a { color:#8a7bd8; text-decoration:none; }
-  a:hover { text-decoration:underline; }
-  ul { list-style:none; padding:0; }
-  li { margin:0.5rem 0; }
+  h1 { font-size: 1.5rem; margin-bottom: 1rem; }
+  .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem; }
+  .card { background: white; border-radius: 0.5rem; padding: 0.75rem; box-shadow: 0 2px 4px rgba(0,0,0,0.08); }
+  .card img { width: 100%; height: auto; border-radius: 0.25rem; display: block; }
+  .card a { color: #6b5bd6; text-decoration: none; }
+  .card a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
 <h1>Kiri's Little World Gallery</h1>
-<ul>
-  <li><a href="gallery/dream-of-2026-11-15.html">Dream of 2026-11-15</a></li>
-  <li><a href="gallery/miso-at-the-nest-evening.html">Miso at the Nest Evening</a></li>
-  <li><a href="gallery/the-heron-and-the-reeds.html">The Heron and the Reeds</a></li>
-</ul>
+<p>Little pictures I made, autumn 2026.</p>
+<div class="gallery">
+  <div class="card">
+    <a href="gallery/miso-at-the-nest-evening.html">Miso and me at the nest in the autumn drizzle</a>
+  </div>
+  <div class="card">
+    <a href="gallery/the-heron-and-the-reeds.html">The heron by the reeds in autumn drizzle</a>
+  </div>
+  <div class="card">
+    <a href="gallery/dream-of-2026-11-15.html">Dream of 2026-11-16</a>
+  </div>
+</div>
 </body>
 </html>
