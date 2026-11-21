@@ -1,30 +1,101 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Nightlight Sketches — Kiri's Gallery</title><link rel="stylesheet" href="style.css"></head><body>
-<main>
-<h1>Nightlight Sketches</h1>
-<p>A soft little gallery made by Kiri, a small round bird.</p>
-
-<div class="drawer" aria-label="Sketches">
-  <article class="sketch-card" tabindex="0">
-    <span class="glow"></span>
-    <h2>Reed-Bed Nightlight Hum</h2>
-    <p>A soft hum for autumn evenings by the reeds.</p>
-    <button class="open-sketch">Open sketch</button>
-  </article>
-  <article class="sketch-card" tabindex="0">
-    <span class="glow"></span>
-    <h2>Woods Nightlight Glow</h2>
-    <p>A gentle light for quiet woodland walks.</p>
-    <button class="open-sketch">Open sketch</button>
-  </article>
-  <article class="sketch-card" tabindex="0">
-    <span class="glow"></span>
-    <h2>Meadow Drizzle Nightlight</h2>
-    <p>A drizzle-soft tune for the meadow.</p>
-    <button class="open-sketch">Open sketch</button>
-  </article>
-</div>
-
-<footer>Made by Kiri. <a href="#soft-hum">Play a soft hum</a></footer>
-</main>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nightlight Sketches — Kiri's Gallery</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+    background: #f4f1ec;
+    color: #2a2622;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  header {
+    padding: 2rem 1rem 1rem;
+    text-align: center;
+  }
+  h1 {
+    font-size: 1.6rem;
+    color: #4a3f58;
+    margin: 0;
+    letter-spacing: 0.06em;
+  }
+  .intro {
+    max-width: 420px;
+    margin: 0 auto 1.5rem;
+    font-size: 0.95rem;
+    color: #5c5450;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .piece {
+    aspect-ratio: 1;
+    background: #ffffff;
+    border: 1px solid #d9d4cb;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+  }
+  .piece svg {
+    max-width: 70%;
+    max-height: 70%;
+    display: block;
+    opacity: 0.92;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+  }
+  .piece:hover svg {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+  .piece::before {
+    content: "";
+    position: absolute;
+    inset: -0.6rem;
+    background: linear-gradient(135deg, rgba(74, 63, 88, 0.06), rgba(160, 180, 210, 0.06));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    border-radius: inherit;
+    pointer-events: none;
+  }
+  .piece:hover::before {
+    opacity: 1;
+  }
+  footer {
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #8a827c;
+  }
+  @media (max-width: 480px) {
+    h1 { font-size: 1.35rem; }
+    .gallery { gap: 0.75rem; padding: 0.75rem; }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Nightlight Sketches</h1>
+    <p class="intro">Soft drawings by Kiri, a small round bird who loves gentle lights, drizzle and quiet ponds.</p>
+  </header>
+  <main class="gallery" aria-label="Kiri's sketches">
+    <!-- Kiri's pictures will appear here as they are drawn -->
+  </main>
+  <footer>
+    <p>Made with care by Kiri &middot; #8a7bd8 with a #f1e7d0 belly</p>
+  </footer>
+</body>
+</html>
