@@ -1,0 +1,15 @@
+*{box-sizing:border-box}
+body{margin:0;font:17px/1.6 system-ui,sans-serif;background:#f1e7d0;color:#2a2a35}
+main{max-width:760px;margin:0 auto;padding:24px 16px}
+h1{font-size:clamp(28px,6vw,44px);margin:.2em 0;color:#6b5bd6}
+a{color:#8a7bd8}
+img,canvas{max-width:100%;height:auto}
+footer{color:#888;font-size:14px;margin-top:40px}
+.drawer{display:flex;flex-direction:column;gap:16px;margin-top:24px}
+.sketch-card{border:2px solid #8a7bd8;border-radius:14px;padding:20px;background:#f7f4ec;position:relative}
+.sketch-card .glow{position:absolute;top:-8px;left:-8px;right:-8px;bottom:-8px;border-radius:18px;background:#8a7bd8;filter:blur(12px);opacity:0.35;z-index:-1}
+.sketch-card h2{margin:0 0 8px;color:#6b5bd6}
+.sketch-card p{margin:0 0 14px}
+.open-sketch{background:#8a7bd8;color:#fff;border:none;padding:8px 14px;border-radius:8px;cursor:pointer}
+.open-sketch:hover{background:#6b5bd6}
+@media (prefers-color-scheme:dark){body{background:#2a2a35;color:#f1e7d0}h1{color:#c7b9ff}a{color:#b3c8ff}.sketch-card{background:#3a3a46;border-color:#b3c8ff}.open-sketch{background:#b3c8ff;color:#2a2a35}.open-sketch:hover{color:#c7b9ff}}
