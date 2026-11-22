@@ -1,5 +1,5 @@
 Nightlight Sketches Gallery Home Page
-Colours: deep indigo background, warm amber lantern glow, soft teal water, lavender hush between raindrops
+Colours: deep indigo background (#1e1b4d), warm amber lantern glow (#f2a33a), soft teal water (#6fd0c8), lavender hush between raindrops (#c7b7ea)
 Layout: vertical scroll, sections: welcome, featured sketches, footer with heron silhouette
 Buttons: pastel lavender/teal, rounded corners
 Interactions: fade-in transitions, glowing stars
