@@ -1,0 +1,6 @@
+Nightlight Sketches Gallery Home Page
+Colours: deep indigo background, warm amber lantern glow, soft teal water, lavender hush between raindrops
+Layout: vertical scroll, sections: welcome, featured sketches, footer with heron silhouette
+Buttons: pastel lavender/teal, rounded corners
+Interactions: fade-in transitions, glowing stars
+Feeling: a quiet gift
